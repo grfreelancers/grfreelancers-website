@@ -1,0 +1,71 @@
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'courier', monospace;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+li:before {
+  font-family: 'fontawesome';
+  content: '\f087';
+  padding-right: 10px;
+  color: #777;
+}
+
+li:nth-child(odd):before {
+  content: '\f0d1';
+  /* Alternating trucks & thumbs up as default bullet points */
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.page-header {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  padding-top: 80px;
+}
+
+ul.external-nav .fa {
+  color: #777;
+  width: 30px;
+}
+
+ul.external-nav li:before {
+  padding: 0;
+  content: '';
+}
+
+footer {
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 40px;
+}
+
+@keyframes blink {
+  0%  { color: #f60; }
+  49% { color: #f60; }
+  50% { color: #333; }
+  99% { color: #333; }
+}
+
+span.relevant-links {
+  font-weight: bold;
+  font-size: 120%;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
